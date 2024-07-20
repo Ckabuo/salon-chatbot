@@ -1,0 +1,112 @@
+body {
+    background-color: #f2d4bd !important;
+}
+
+.title-box {
+    text-align: center;
+    background-color: #fff;
+    color: #ff7c16 !important;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1) !important;
+}
+
+.chat-box {
+    height: 400px;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    padding: 10px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1) !important;
+}
+
+.bot-div, .user-div {
+    display: flex;
+    align-items: center;
+}
+
+.user-div {
+    justify-content: flex-end;
+}
+
+.bot-message {
+    position: relative;
+    text-align: left;
+    color: #fff !important;
+    background-color: #ff7c16 !important;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 12px;
+    clear: both;
+}
+
+.bot-message::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 15px 5px 0;
+    border-color: transparent #ff7c16 transparent transparent !important;
+    left: 0;
+    top: 2px;
+    margin-left: -9px;
+}
+
+.user-message {
+    position: relative;
+    text-align: right;
+    background-color: #D3D3D3 !important;
+    /* opacity: 0.03; */
+    border: 1px solid #D3D3D3 !important;
+    padding: 5px;
+    border-radius: 12px;
+    float: right;
+    clear: both;
+}
+
+.user-message::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 2px 12px;
+    border-color: transparent transparent transparent #D3D3D3 !important;
+    right: 0;
+    top: 2px;
+    margin-right: -9px;
+}
+
+.form-control:focus {
+    color: #495057 !important;
+    background-color: #fff !important;
+    border-color: #ffc280 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255,165,0,.25) !important;
+}
+
+.btn {
+    background-color: #ff7c16 !important;
+    border: 1px solid #ff7c16 !important;
+}
+
+.btn-primary:hover {
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ff7c16  !important;
+    font-weight: 600;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff !important;
+    background-color: #ff7c16 !important;
+    border-color: #ff7c16 !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff !important;
+    background-color: #ff7c16 !important;
+    border-color: #ff7c16 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255,165,0,.25) !important;
+}
